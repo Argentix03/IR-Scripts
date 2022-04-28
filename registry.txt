@@ -1,0 +1,35 @@
+HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run 
+HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunonceEx
+HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunonceEx
+HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfileGloballyOpenPorts\List
+HKCU:\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfileGloballyOpenPorts\List
+HKCU:\Software\Microsoft\Windows NT\CurrentVersion\Windows\Load
+HKCU:\Software\Microsoft\Office\\Excel\Security\AccessVBOM\
+HKLM:\SYSTEM\CurrentControlSet\Services
+HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\
+HKCU:\Software\Classes\Applications\rundll32.exe\shell\open
+HKLM:\SYSTEM\CurrentControlSet\Services\lanmanserver\parameters\NullSessionPipes
+HKCU:\SOFTWARE\Microsoft\WABE\DataPath
+HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\BootExecute
+HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\sibot
+HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap
+HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\ShellCompatibility\Applications
+HKCU:\Software\Microsoft\Windows\CurrentVersion\RunOnce
+HKLM:\Software\Microsoft\Windows\CurrentVersion\RunOnce
+HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedMRU
+HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist
+HKCU:\Software\Microsoft\Internet Explorer\TypedURLs
+HKLM:\SYSTEM\MountedDevices
+HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\CPCVolume
+HKLM:\SOFTWARE\Microsoft\Command Processor
+HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedMRU
+HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters
+HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Nla\Cache\Intranet
