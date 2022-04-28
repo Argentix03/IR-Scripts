@@ -21,10 +21,10 @@ Please do make sure to run the script as follows:
       B1. HKLM:\full\path
       B2. HKCU:\full\path
   3.  Make sure to execute the script from the same folder as the text file.
-![a](https://github.com/ghosts621/IR-Scripts/blob/main/registry_main.png)
+![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/registry_main.png)
 
 the result from the script:
 Everyone Success  ReadKey, TakeOwnership - The script was able to add the path to the event viewer monitoring.
 An Error Occured - RegistryKey Does not exist - This path does not exist in the system.
-![a](https://github.com/ghosts621/IR-Scripts/blob/main/registry_result.png)
+![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/registry_Result.png)
 
