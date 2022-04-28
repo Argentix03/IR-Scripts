@@ -12,9 +12,9 @@ write-host "The script was tested and audites all registry paths found in the 'r
 Please do make sure to run the script as follows:
 1.  Run-as Administrator with Full permissions.
 2.  Make sure the paths in the text file are:
-                                              A. No Empty Lines.
-                                              B1. HKLM:\full\path
-                                              B2. HKCU:\full\path
+   A. No Empty Lines.
+   B1. HKLM:\full\path
+   B2. HKCU:\full\path
 3.  Make sure to execute the script from the same folder as the text file." -ForegroundColor Yellow
 Read-Host "Press any key to continue..."
 try{
