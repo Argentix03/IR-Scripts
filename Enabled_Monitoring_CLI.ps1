@@ -26,7 +26,7 @@ foreach($line in Get-Content registry.txt) {
 	$count+=1
 }
 write-host "The script loaded registry paths = $count" -ForegroundColor blue
-
+Start-Sleep -s 2
 	foreach($line in Get-Content registry.txt) {
 		try {
 		write-host "Path = $line" -ForegroundColor green 
