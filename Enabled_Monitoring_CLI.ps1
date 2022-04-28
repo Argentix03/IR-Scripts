@@ -14,7 +14,9 @@ Please do make sure to run the script as follows:
 2.  Make sure the paths in the text file are:
                                               A. No Empty Lines.
                                               B1. HKLM:\full\path
-                                              B2. HKCU:\full\path"
+                                              B2. HKCU:\full\path
+3.  Make sure to execute the script from the same folder as the text file." -ForegroundColor Yellow
+Read-Host "Press any key to continue..."
 try{
     auditpol /SET /subcategory:"Registry" /success:enable /failure:enable
 }
@@ -24,23 +26,28 @@ foreach($line in Get-Content registry.txt) {
 	$count+=1
 }
 write-host "The script loaded registry paths = $count" -ForegroundColor blue
-foreach($line in Get-Content registry.txt) {
-	write-host "Path = $line" -ForegroundColor green
-	try{
-		$path = $line
-		$user = 'Everyone'
-		$auditRules = 'ReadKey,TakeOwnership'
-		$inheritType = 'None'
-		$propagationFlags = 'None'
-		$auditType = 'Success'
-		$rule = New-Object System.Security.AccessControl.RegistryAuditRule($user,$auditRules,$inheritType,$propagationFlags,$auditType)
-		$acl = Get-Acl $path -Audit
-		$acl.AddAuditRule($rule)
-		Set-Acl -AclObject $acl -Path $path
-		Start-Sleep -Seconds 1
-		write-host (get-acl $line -audit).AuditToString -ForegroundColor magenta
-	}
-	catch [System.SystemException]{ write-host "RegistryKey Does not exist" -ForegroundColor red }
+
+	foreach($line in Get-Content registry.txt) {
+		try {
+		write-host "Path = $line" -ForegroundColor green 
+		$path = $line 
+		$user = 'Everyone' 
+		$auditRules = 'ReadKey,TakeOwnership' 
+		$inheritType = 'None' 
+		$propagationFlags = 'None' 
+		$auditType = 'Success' 
+		$rule = New-Object System.Security.AccessControl.RegistryAuditRule($user,$auditRules,$inheritType,$propagationFlags,$auditType) 
+		$acl = Get-Acl $path -Audit -ErrorAction SilentlyContinue
+		$acl.AddAuditRule($rule) 
+		Set-Acl -AclObject $acl -Path $path  
+		Start-Sleep -Seconds 1 
+		write-host (get-acl $line -audit).AuditToString -ForegroundColor magenta 
+		}
+			catch {
+    Write-Host "An Error Occured - RegistryKey Does not exist" -ForegroundColor darkRED
+	continue
 }
+	}
+
 write-host "Done!" -ForegroundColor green
 
