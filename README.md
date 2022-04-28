@@ -20,3 +20,4 @@ Please do make sure to run the script as follows:
       A. No Empty Lines.
       B1. HKLM:\full\path
       B2. HKCU:\full\path
+  3.  Make sure to execute the script from the same folder as the text file.
