@@ -19,9 +19,9 @@
  Please do make sure to run the script as follows:
   1.  Run-as Administrator with Full permissions.
   2.  Make sure the paths in the text file are:
-  A. No Empty Lines.
+  **A. No Empty Lines.
   B1. HKLM:\full\path
-  B2. HKCU:\full\path
+  B2. HKCU:\full\path**
   3.  Make sure to execute the script from the same folder as the text file.
 
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/registry_main.png)
