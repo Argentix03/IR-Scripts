@@ -26,7 +26,7 @@
 
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/registry_main.png)
 
-** The result from the script:**
+ The result from the script:
  Everyone Success  ReadKey, TakeOwnership - The script was able to add the path to the event viewer monitoring.
  An Error Occured - RegistryKey Does not exist - This path does not exist in the system.
 
