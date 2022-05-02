@@ -32,3 +32,17 @@
 
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/registry_Result.png)
 
+## EventViewer.ps1
+This script will halp you to identify if your Event Viewer was compromise
+Stage 1 - EventLog API
+Stage 1 will let you know if attacker was deleted the Threads.
+![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/EventV_stage1.png)
+
+Stage 2 - EventLog MAX size and Retention
+Stage 2 will let you know if attacker was messing with the size and Retention of Security, System, Application logs.
+![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/EventV_stage2.png)
+
+
+
+
+
