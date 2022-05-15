@@ -40,6 +40,14 @@ Example API file:
 
 ## Audit_GPO_Hardning.ps1
  This script will help you to preforme hardning to the event viewer events
+### Requirement
+1.Run-as Administrator with Full permissions.
+
+### Usage
+```powershell
+./Audit_GPO_Hardning.ps1
+```
+
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/main.png)
 
  for example input edr in the input section 
@@ -50,13 +58,6 @@ Example API file:
 
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/edr1.png)
 
-### Usage
-
-```powershell
-./Audit_GPO_Hardning.ps1
-```
-
-#########################################################
 ## Enabled_Monitoring_CLI.ps1
  The following script will enable auditing for registry paths most used by attackers in known TTPs.
 
