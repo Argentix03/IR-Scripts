@@ -2,13 +2,21 @@
 
 ## Virustotal_RetroHunt_Integration.py
 This script will help you run over the results from RetroHunt hash file 
+
 Paramter:
+
 -l - the limet(for free accuont 4 request per min)
+
 -p - the path to the hash file
+
 -b - is the buffer from the file
+
 reqeriment:
+
 Hash file
+
 API file 
+
 The help muni
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT.png)
 
