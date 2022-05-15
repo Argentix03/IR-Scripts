@@ -3,20 +3,21 @@
 ## Virustotal_RetroHunt_Integration.py
 This script will help you run over the results from RetroHunt hash file 
 
-Paramter:
-
--l - the limet(for free accuont 4 request per min)
-
--p - the path to the hash file
-
--b - is the buffer from the file
-
-reqeriment:
+### Requirement:
 
 Hash file
 
 API file 
 ### Usage
+
+Paramter:
+
+-l -The limet(for free accuont 4 request per minutes) the scripts will calculate automatics the time between the request
+
+-p -The path to the hash file
+
+-b -The buffer from the file
+
 ```powershell
 python VT_RH.py -h
 ```
