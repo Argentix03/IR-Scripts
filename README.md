@@ -82,6 +82,9 @@ B1.HKCU:\full\path.
 
 ### Usage
 
+```powershell
+./Enabled_Monitoring_CLI.ps1
+```
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/registry_main.png)
 
  The result from the script:
