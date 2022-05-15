@@ -20,6 +20,9 @@ API file
 ```powershell
 python VT_RH.py -h
 ```
+```powershell
+python VT_RH.py -h
+```
 Hash File from the RetroHunt scan:
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT5.png)
 
