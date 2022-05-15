@@ -2,7 +2,21 @@
 
 ## Virustotal_RetroHunt_Integration.py
 This script will help you run over the results from RetroHunt hash file 
+Paramter:
+-l - the limet(for free accuont 4 request per min)
+-p - the path to the hash file
+-b - is the buffer from the file
+reqeriment:
+Hash file
+API file 
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT.png)
+
+Hash File from the RetroHunt scan:
+![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT5.png)
+
+API File from the RetroHunt scan:
+![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT6.png)
+
 
 ## Audit_GPO_Hardning.ps1
  This script will help you to preforme hardning to the event viewer events
