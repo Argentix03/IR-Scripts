@@ -17,12 +17,9 @@ Hash file
 
 API file 
 
-The help muni
 ```powershell
-pip install foobar
+python VT_RH.py -h
 ```
-![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT.png)
-
 Hash File from the RetroHunt scan:
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT5.png)
 
