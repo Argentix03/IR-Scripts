@@ -9,6 +9,7 @@ Paramter:
 reqeriment:
 Hash file
 API file 
+The help muni
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT.png)
 
 Hash File from the RetroHunt scan:
