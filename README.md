@@ -27,7 +27,7 @@ python VT_RH.py -l 10 -p "C:\hash.txt"
 python VT_RH.py -l 10 -p "C:\hash.txt" -b "buffer_name:"
 ```
 
-![a]("https://github.com/ghosts621/IR-Scripts/blob/main/image/VT 2.png")
+![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT2.png)
 
 
 
