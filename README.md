@@ -10,7 +10,7 @@ Hash file
 API file 
 ### Usage
 
-Paramter:
+Parameters:
 
 -l -The limet(for free accuont 4 request per minutes) the scripts will calculate automatics the time between the request
 
