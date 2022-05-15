@@ -56,7 +56,7 @@ Example API file:
 ./Audit_GPO_Hardning.ps1
 ```
 
-
+#########################################################
 ## Enabled_Monitoring_CLI.ps1
  The following script will enable auditing for registry paths most used by attackers in known TTPs.
 
