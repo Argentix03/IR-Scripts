@@ -96,6 +96,10 @@ B1.HKCU:\full\path.
 ## EventViewer.ps1
 This script will halp you to identify if your Event Viewer was compromise
 
+### Requirement
+1.Run-as Administrator with Full permissions.
+
+### Usage
 ```powershell
 ./EventViewer.ps1
 ```
