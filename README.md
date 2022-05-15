@@ -50,6 +50,12 @@ Example API file:
 
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/edr1.png)
 
+### Usage
+
+```powershell
+./Audit_GPO_Hardning.ps1
+```
+
 
 ## Enabled_Monitoring_CLI.ps1
  The following script will enable auditing for registry paths most used by attackers in known TTPs.
