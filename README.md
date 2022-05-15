@@ -33,7 +33,7 @@ Hash File from the RetroHunt scan:
 
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT5.png)
 
-API File from the RetroHunt scan:
+API File:
 
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT6.png)
 
