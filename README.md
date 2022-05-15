@@ -1,7 +1,7 @@
 # IR-Scripts
 
 ## Virustotal_RetroHunt_Integration.py
-This script will help tou run over the result file hash from RetroHunt
+This script will help you run over the results from RetroHunt hash file 
 
 ## Audit_GPO_Hardning.ps1
  This script will help you to preforme hardning to the event viewer events
