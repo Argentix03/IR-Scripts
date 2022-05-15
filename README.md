@@ -26,6 +26,11 @@ python VT_RH.py -l 10 -p "C:\hash.txt"
 ```powershell
 python VT_RH.py -l 10 -p "C:\hash.txt" -b "buffer_name:"
 ```
+
+![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT 2.png)
+
+
+
 Hash File from the RetroHunt scan:
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT5.png)
 
