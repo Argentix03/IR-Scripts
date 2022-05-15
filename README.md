@@ -18,8 +18,9 @@ Hash file
 API file 
 
 The help muni
-powershell'''
-'''
+```powershell
+pip install foobar
+```
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT.png)
 
 Hash File from the RetroHunt scan:
