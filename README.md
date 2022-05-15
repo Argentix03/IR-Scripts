@@ -29,12 +29,11 @@ python VT_RH.py -l 10 -p "C:\hash.txt" -b "buffer_name:"
 ```
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT2.png)
 
-
-Hash File from the RetroHunt scan:
+Example Hash file from the RetroHunt scan:
 
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT5.png)
 
-API File:
+Example API file:
 
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/VT6.png)
 
