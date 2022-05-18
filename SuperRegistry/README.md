@@ -1,6 +1,20 @@
 # SuperRegistry.ps1
 This script will help you to add important Registry value to extra protect your computer from compromise it by an attacker
 
+### Requirement:
+
+DB.txt file
+
+Registry.txt file 
+
+DB_Deleted.txt
+
+### Usage
+
+```powershell
+./SuperRegistry.ps1
+```
+
 ### Stage 1 
 The script will check for the Important Files that the script needed for running
 
