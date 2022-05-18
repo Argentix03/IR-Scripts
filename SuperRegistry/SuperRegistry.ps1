@@ -1,6 +1,6 @@
 clear
 $ErrorActionPreference = "stop"
-
+##################################################################################3
 function Check-Administrator  
 {  
     [OutputType([bool])]
@@ -16,6 +16,7 @@ if(-not (Check-Administrator))
     Write-Error "This script must be executed as Administrator.";
     exit 1;
 }
+####################################################################################################################################################################
 $chaking_file1=Test-Path -Path Registry_Vaule_Missing.txt -PathType Leaf
 $chaking_file2=Test-Path -Path Registry_Path_Missing.txt -PathType Leaf
 $chaking_file3=Test-Path -Path Registry.txt -PathType Leaf
@@ -46,11 +47,16 @@ if ($chaking_file3 -eq "True"){
 	write-host "[IMPORTED FILE] File DONT Exists - DB.txt" -ForegroundColor blue
 	exit 1;
 }
+
 $Userinput = Read-Host "Do you want to Deletd the Registry File?[Y/n]"
 if ($Userinput -eq "Y") {
 	rm -r Registry_Vaule_Missing.txt
 	rm -r Registry_Path_Missing.txt
+	clear
+}else{
+	
 }
+####################################################################################################################################################################
 Read-Host "Press any key to continue..."
 foreach($line in Get-Content Registry.txt) {
 	$count+=1
@@ -86,6 +92,7 @@ foreach($line in Get-Content Registry.txt) {
 write-host "[INF]Total of Registry Key Found $Registry_Key_Found" -ForegroundColor blue
 write-host "[INF]Total of Registry Vaule Missing  $Registry_Vaule_Missing" -ForegroundColor Yellow
 write-host "[INF]Total of Registry Key Missing $Registry_Path_Missing" -ForegroundColor Red
+####################################################################################################################################################################
 echo "------------------------------------------------"
 foreach($line in Get-Content Registry.txt) {
 	$Inputstring = $line
@@ -116,6 +123,7 @@ foreach($line in Get-Content Registry.txt) {
 	"$RegistryPath,$RegistryName" >> Registry_Path_Missing.txt
 	}
 }
+####################################################################################################################################################################
 $Userinput = Read-Host "Do you want to Enable it[Y/n]"
 if ($Userinput -eq "Y") {
 
@@ -131,18 +139,18 @@ foreach($line in Get-Content Registry_Vaule_Missing.txt) {
 	$DB_Vaule = $CharArray[-5]
 	if ($Registry_Vaule -eq $DB_Vaule){
 		write-host "[INF] Success add the Vaule= $Registry_Vaule" -ForegroundColor Green
-		Invoke-Expression $InputString
+		Invoke-Expression $InputString >> testing.txt
 	}
 	}
 	
-	}Catch {write-host "Must be manule" -ForegroundColor Cyan} 
+	}Catch {write-host "Need to be added manually >>> $Inputstring" -ForegroundColor Cyan} 
 	
 }
+rm -r testing.txt
 }elseif ($Userinput -eq "n") {
-	exit 1;
 }
 else{write-host "Invalid input try to input y or n" -ForegroundColor darkred}
-
+####################################################################################################################################################################
 $Userinput = Read-Host "ReRun for make sure[Y/n]"
 if ($Userinput -eq "Y") {
 	foreach($line in Get-Content Registry.txt) {
@@ -174,6 +182,22 @@ if ($Userinput -eq "Y") {
 	}	
 	
 }
-$Userinput = Read-Host "Progremer[Y/n]"
+####################################################################################################################################################################
+$Userinput = Read-Host "Programer[Y/n]"
 if ($Userinput -eq "Y") {
+	foreach($line in Get-Content DB_Deleted.txt) {
+		
+		
+			Try {
+			Invoke-Expression $line
+			}
+		
+		Catch [System.Management.Automation.PSArgumentException]{write-host ""-NoNewline}
+		Catch [System.Management.Automation.ItemNotFoundException]{write-host "" -NoNewline}
+		Catch {write-host "" -NoNewline}
+	
 	}
+	write-host "Done!" -ForegroundColor Gree
+
+	}
+####################################################################################################################################################################	
