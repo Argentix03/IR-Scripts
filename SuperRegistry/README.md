@@ -31,3 +31,9 @@ If needed so the script can be added those important Registry value
 
 ### Stage 4 
 It is for POC if you want to delete the Registry value
+
+
+
+TO DO
+1. Add the feature - Key added 
+2. Add more important Registry value
