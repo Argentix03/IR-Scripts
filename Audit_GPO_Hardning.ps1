@@ -313,7 +313,7 @@ echo ""
 		}
 		
 		$Userinput_for_enable = Read-Host "Do You want Enable all the Features(y/n)"
-	if ($Userinput_for_enable -eq "y" || $Userinput_for_enable -eq "Y"){
+	if ($Userinput_for_enable -eq "y" -OR $Userinput_for_enable -eq "Y"){
 			clear
 	write-host "
     ___             ___ __  _                ___        __  ___            _ __             _            
