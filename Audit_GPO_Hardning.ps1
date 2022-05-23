@@ -261,7 +261,7 @@ echo ""
 	
 }
 #############################################################################################################################
-elseif ($Userinput -eq "EDR" || $Userinput -eq "edr") {
+elseif ($Userinput -eq "EDR" -OR $Userinput -eq "edr") {
 		clear
 	write-host "
     ___             ___ __  _                ___        __  ___            _ __             _            
