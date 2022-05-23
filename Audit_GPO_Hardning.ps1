@@ -13,7 +13,7 @@ write-host "edr - for stations with edr on it" -ForegroundColor Yellow
 write-host "dc - for dc server" -ForegroundColor Yellow
 write-host "server - for Endpoint & Server" -ForegroundColor Yellow
 $Userinput = Read-Host "What's your case?(edr,dc,server)"
-if ($Userinput -eq "DC" || $Userinput -eq "dc" ) {
+if ($Userinput -eq "DC" -OR $Userinput -eq "dc" ) {
 	clear
 	write-host "
     ___             ___ __  _                ___        __  ___            _ __             _            
@@ -157,7 +157,7 @@ echo ""
 		write-host "Other Object Access Events is Off" -ForegroundColor red
 	}
 	$Userinput_for_enable = Read-Host "Do You want Enable all the Features(y/n)"
-	if ($Userinput_for_enable -eq "y" || $Userinput_for_enable -eq "Y"){
+	if ($Userinput_for_enable -eq "y" -OR $Userinput_for_enable -eq "Y"){
 			clear
 	write-host "
     ___             ___ __  _                ___        __  ___            _ __             _            
@@ -239,7 +239,7 @@ echo ""
 			write-host "Audit Policy Change is Off" -ForegroundColor red
 		}
 		$Userinput_for_enable = Read-Host "Do you want to enable all the Features(y/n)"
-	if ($Userinput_for_enable -eq "y" || $Userinput_for_enable -eq "Y"){
+	if ($Userinput_for_enable -eq "y" -OR $Userinput_for_enable -eq "Y"){
 			clear
 	write-host "
     ___             ___ __  _                ___        __  ___            _ __             _            
