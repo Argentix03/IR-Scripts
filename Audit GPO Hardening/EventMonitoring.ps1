@@ -6,7 +6,7 @@ write-host "
  / ___ / /_/ / /_/ / / /_/ / / / / /_/ /  / /_/  <   / /  / / /_/ / / / / / /_/ /_/ / /  / / / / / /_/ / 
 /_/  |_\__,_/\__,_/_/\__/_/_/ /_/\__, /   \____/\/  /_/  /_/\____/_/ /_/_/\__/\____/_/  /_/_/ /_/\__, /  
                                 /____/                                                          /____/   
-			by ghosts621 & NordicWolfSlayer#1337" -ForegroundColor Cyan
+			by ghosts621" -ForegroundColor Cyan
 echo ""
 write-host "The following script will enable Auditing & Monitoring for the Event Viewer" -ForegroundColor blue
 write-host "[1] EDR - for stations with missing EDR on it" -ForegroundColor Yellow
