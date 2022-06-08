@@ -1,0 +1,53 @@
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" -ValueName DisableEmailScanning  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SYSTEM\CurrentControlSet\Control\Lsa" -ValueName RunAsPPL  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\CredUI" -ValueName EnumerateAdministrators
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer" -ValueName AlwaysInstallElevated  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" -ValueName NoAutorun  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\Windows\WinRM\Client" -ValueName AllowBasic  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\Windows\WinRM\Service" -ValueName AllowBasic  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" -ValueName fAllowToGetHelp  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" -ValueName NoDriveTypeAutoRun
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\Windows\Network Connections" -ValueName NC_AllowNetBridge_NLA  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\Windows\Explorer" -ValueName NoAutoplayfornonVolume  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" -ValueName DisableIPSourceRouting  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SYSTEM\CurrentControlSet\Control\Lsa" -ValueName DisableDomainCreds  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters" -ValueName RequireSecuritySignature  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile" -ValueName AllowLocalIPsecPolicyMerge  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\Internet Explorer\Download" -ValueName RunInvalidSignatures  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Ext" -ValueName VersionCheckEnabled  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile" -ValueName AllowLocalPolicyMerge  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Google\Chrome" -ValueName PasswordManagerEnabled  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -ValueName LocalAccountTokenFilterPolicy  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\FVE" -ValueName MinimumPIN 
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\Windows\Network Connections" -ValueName NC_ShowSharedAccessUI  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Google\Chrome" -ValueName BackgroundModeEnabled  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" -ValueName fAllowUnsolicited  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\policies\Microsoft\office\16.0\common\officeupdate" -ValueName hideenabledisableupdates  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SYSTEM\CurrentControlSet\Control\Lsa" -ValueName LmCompatibilityLevel 
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\Windows\Network Connections" -ValueName NC_StdDomainUserSetLocation  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\policies\Microsoft\office\16.0\common\officeupdate" -ValueName enableautomaticupdates  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" -ValueName SecurityLayer  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\Windows\lanmanworkstation" -ValueName AllowInsecureGuestAuth 
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Adobe\Adobe Acrobat\11.0\FeatureLockDown" -ValueName bEnableFlash  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Adobe\Adobe Acrobat\11.0\FeatureLockDown" -ValueName bDisableJavaScript  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Adobe\Acrobat\2017\FeatureLockDown" -ValueName bDisableJavaScript  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SYSTEM\CurrentControlSet\Control\Lsa" -ValueName RestrictAnonymousSAM  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SYSTEM\CurrentControlSet\Control\Lsa" -ValueName LimitBlankPasswordUse  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Google\Chrome" -ValueName AllowOutdatedPlugins  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Google\Chrome" -ValueName DefaultPluginsSetting 
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\Wdigest" -ValueName UseLogonCredential  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Scan" -ValueName DisableEmailScanning  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -ValueName ConsentPromptBehaviorUser  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Controlled Folder Access" -ValueName EnableControlledFolderAccess  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SYSTEM\CurrentControlSet\Control\Lsa" -ValueName RestrictAnonymous  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\FVE" -ValueName UseAdvancedStartup
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters" -ValueName DisableIPSourceRouting  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile" -ValueName DisableNotifications  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile" -ValueName DisableNotifications  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile" -ValueName DisableNotifications  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Google\Chrome" -ValueName BlockThirdPartyCookies  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Policies\Microsoft Services\AdmPwd" -ValueName AdmPwdEnabled  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SYSTEM\CurrentControlSet\Services\mrxsmb10" -ValueName Start  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters" -ValueName DisablePasswordChange  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SYSTEM\CurrentControlSet\Services\LanManServer\Parameters" -ValueName RestrictNullSessAccess  
+Remove-GPRegistryValue -Guid $id -Key "HKLM\SOFTWARE\Microsoft\Windows Defender\Real-Time Protection" -ValueName DisableIOAVProtection 
