@@ -45,8 +45,8 @@ foreach($line in Get-Content OK.txt) {
 	catch [System.SystemException]{ write-host "RegistryKey Does not exist" -ForegroundColor red }
 }
 clear
-write-host "The script Success to enable monitoring on $count_Success registry Key" -ForegroundColor green 
-write-host "The script Faile to enable monitoring on $count_False registry Key" -ForegroundColor RED 
+write-host "Success to Enable Monitoring On $count_Success Registry Key" -ForegroundColor green 
+write-host "Faile to Enable Monitoring On $count_False Registry Key" -ForegroundColor RED 
 $FileToDelete1= "Test_Registry_Key.txt"
 $FileToDelete2 = "OK.txt"
 $FileToDelete3 = "Error.txt"
