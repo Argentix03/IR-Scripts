@@ -12,6 +12,18 @@ $id=$b.remove(0,1)
 foreach($line in Get-Content Enable.txt) {
 	$Registry_Key_num+=1
 }
+clear
+write-host "
+   _____                       _____            _     _              
+  / ____|                     |  __ \          (_)   | |             
+ | (___  _   _ _ __   ___ _ __| |__) |___  __ _ _ ___| |_ _ __ _   _ 
+  \___ \| | | | '_ \ / _ \ '__|  _  // _ \/ _` | / __| __| '__| | | |
+  ____) | |_| | |_) |  __/ |  | | \ \  __/ (_| | \__ \ |_| |  | |_| |
+ |_____/ \__,_| .__/ \___|_|  |_|  \_\___|\__, |_|___/\__|_|   \__, |
+              | |                          __/ |                __/ |
+              |_|                         |___/                |___/ 
+			 
+			 By - Ghosts621  " -ForegroundColor Magenta
 write-host "Starting..." -ForegroundColor Green
 
 if ($UserInput -eq 'e'){
@@ -33,6 +45,17 @@ if ($UserInput -eq 'e'){
 	}
 }
 clear
+write-host "
+   _____                       _____            _     _              
+  / ____|                     |  __ \          (_)   | |             
+ | (___  _   _ _ __   ___ _ __| |__) |___  __ _ _ ___| |_ _ __ _   _ 
+  \___ \| | | | '_ \ / _ \ '__|  _  // _ \/ _` | / __| __| '__| | | |
+  ____) | |_| | |_) |  __/ |  | | \ \  __/ (_| | \__ \ |_| |  | |_| |
+ |_____/ \__,_| .__/ \___|_|  |_|  \_\___|\__, |_|___/\__|_|   \__, |
+              | |                          __/ |                __/ |
+              |_|                         |___/                |___/ 
+			 
+			 By - Ghosts621  " -ForegroundColor Magenta
 write-host "Policy Name = $Policy_Name" -ForegroundColor Green
 write-host "Policy ID = $id" -ForegroundColor Green
 write-host "Registry Key = $Registry_Key_num" -ForegroundColor Green
