@@ -52,7 +52,7 @@ foreach($line in Get-Content OK.txt) {
 clear
 write-host "The script loaded $count Registry paths" -ForegroundColor blue
 write-host "The script Success to enable monitoring on $count_Success registry Key" -ForegroundColor green 
-write-host "The script Faile to enable monitoring on $count_False registry Key chake the Error.txt file" -ForegroundColor RED 
+write-host "The script Faile to enable monitoring on $count_False registry Key check the Error.txt file" -ForegroundColor RED 
 $FileToDelete1= "Test_Registry_Key.txt"
 $FileToDelete2 = "OK.txt"
 $FileToDelete3 = "Error.txt"
