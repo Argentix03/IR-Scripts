@@ -1,4 +1,4 @@
-## Virustotal_RetroHunt_Integration.py
+## Audit GPO Hardening
 This script will help you run over the results from RetroHunt hash file 
 
 ### Requirement:
