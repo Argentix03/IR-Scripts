@@ -16,3 +16,4 @@ Run-as Administrator with Full permissions.
 ```
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/picR2.png)
 ![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/picR1.png)
+![a](https://github.com/ghosts621/IR-Scripts/blob/main/image/picR3.png)
