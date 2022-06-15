@@ -1,8 +1,11 @@
 ## Audit GPO Hardening
-This script will help you run over the results from RetroHunt hash file 
+This script will help you to preforme hardning to the event viewer events.
 
 ### Requirement:
-All the file in this repo
+1.Run-as Administrator with Full permissions.
+
+2.All the file in this repo
+
 
 ### Usage
 
