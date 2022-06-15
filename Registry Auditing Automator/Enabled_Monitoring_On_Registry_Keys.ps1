@@ -5,7 +5,9 @@ catch [System.SystemException]{ write-host "High Permissions Required! Re-Run th
 $count_Success=0
 $count_False=0
 $flag=0
+$count=0
 foreach($line in Get-Content registry.txt) {
+	$count+=1
 	$linewithouspasificstring=$line -replace ":",""
 	"REG QUERY $linewithouspasificstring | $line" | Out-File -FilePath Test_Registry_Key.txt -Append
 }
@@ -48,6 +50,7 @@ foreach($line in Get-Content OK.txt) {
 	catch [System.SystemException]{ write-host "RegistryKey Does not exist" -ForegroundColor red }
 }
 clear
+write-host "The script loaded $count Registry paths" -ForegroundColor blue
 write-host "The script Success to enable monitoring on $count_Success registry Key" -ForegroundColor green 
 write-host "The script Faile to enable monitoring on $count_False registry Key chake the Error.txt file" -ForegroundColor RED 
 $FileToDelete1= "Test_Registry_Key.txt"
