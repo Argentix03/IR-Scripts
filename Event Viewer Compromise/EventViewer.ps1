@@ -16,11 +16,11 @@ $aws = $w.Threads | select -Property Id ,WaitReason
 $y = $aws | select -exp WaitReason  | Measure-Object | select -exp Count
 if ($a -eq 'Degraded'){
 	
-	write-host "Your EventLogs API was compromise" -ForegroundColor Red
+	write-host "Your EventLogs API was compromised" -ForegroundColor Red
 	
 }elseif ($y -lt 5)
 {
-    write-host "Your EventLogs API was compromise" -ForegroundColor Red
+    write-host "Your EventLogs API was compromised" -ForegroundColor Red
 
 }elseif ($y -gt 5){
 	write-host "Your EventLogs API OK" -ForegroundColor Green
@@ -32,7 +32,7 @@ $b=$a[2]
 $c=$b | findstr "0xffffffff"
 $d=$c.Length
 if ($d -eq 40){
-    write-host "Your EventLogs was compromise" -ForegroundColor Red
+    write-host "Your EventLogs was compromised" -ForegroundColor Red
 	write-host "Your Security EventLogs was is on **Do not overwrite event**" -ForegroundColor Red
 	REG QUERY "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Security" -v MaxSize
 }else {
@@ -44,7 +44,7 @@ $b=$a[2]
 $c=$b | findstr "0xffffffff"
 $d=$c.Length
 if ($d -eq 40){
-    write-host "Your EventLogs was compromise" -ForegroundColor Red
+    write-host "Your EventLogs was compromised" -ForegroundColor Red
 	write-host "Your System EventLogs is on **Do not overwrite event**" -ForegroundColor Red
 	REG QUERY "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\System" -v Retention
 	REG QUERY "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\System" -v MaxSize
@@ -57,7 +57,7 @@ $b=$a[2]
 $c=$b | findstr "0xffffffff"
 $d=$c.Length
 if ($d -eq 40){
-    write-host "Your EventLogs was compromise" -ForegroundColor Red
+    write-host "Your EventLogs was compromised" -ForegroundColor Red
 	write-host "Your Application EventLogs was is on **Do not overwrite event**" -ForegroundColor Red
 	REG QUERY "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application" -v Retention
 	REG QUERY "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application" -v MaxSize
